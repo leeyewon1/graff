@@ -1,0 +1,281 @@
+.inner {
+    /* 그리드 시스템의 가로 최대 크기 */
+    max-width: 1200px;
+    /* 박스를 가운데 오게 함 */
+    margin: 0 auto;
+    /* 그리드 시스템의 가장자리 margin */
+    padding: 0 15px;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.Header {
+    line-height: 80px;
+}
+
+.Header .inner {
+    display: flex;
+}
+
+.Header .Gnb {
+    /* 좌측 마진을 최대로 줘서 우측으로 박스를 보냄. */
+    margin: 0 0 0 auto;
+}
+
+.Header .Gnb ul {
+    display: flex;
+    gap: 40px;
+}
+
+.Header .Gnb ul a {
+    display: block;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.Header .search {
+    margin: 0 0 0 100px;
+    font-size: 24px;
+}
+
+.MainVisual .Main_Visual_Slide .itm {
+    height: 700px;
+
+}
+
+.MainVisual .Main_Visual_Slide .itm01 {
+    background: url(../images/mainvisual01.jpg)no-repeat center center/cover ;
+}
+.MainVisual .Main_Visual_Slide .itm02 {
+    background: url(../images/mainvisual02.jpg)no-repeat center center/cover ;
+}
+.MainVisual .Main_Visual_Slide .itm03 {
+    background: url(../images/mainvisual03.jpg)no-repeat center center/cover ;
+}
+
+.MainBasic {
+    padding: 120px 0;
+}
+
+.MainBasic h2 {
+    text-align: center;
+
+}
+
+.MainBasic p {
+    text-align: center;
+}
+
+.MainBasic .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.MainBasic .inner>* {
+    flex: 1 
+}
+
+.MainBasic figure .img_wrap {
+    margin: 0 0 16px 0;
+}
+
+.MainBasic figure strong {
+    display: block;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+.MainBasic figure .order {
+    text-align: center;
+}
+
+.MainBasic figure a {
+    display: inline-block;
+    background: rgb(151, 148, 148);
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+
+.MainProduct {
+    position: relative;
+    padding: 120px 0;
+    background: #f9f9f9;
+}
+.MainProduct .main_product_slide {
+    margin: 0 -15px;
+}
+
+.MainProduct .img_wrap {
+    border: 3px solid #fff;
+}
+
+.MainProduct figure {
+    padding: 0 15px;
+}
+
+.MainProduct .main_product_slide .slick-dots {
+    margin:40px 0 0 0 ;
+    text-align: center;
+}
+
+.MainProduct .main_product_slide .slick-dots li {
+    display: inline-block;
+    margin: 0 4px;
+    
+}
+
+.MainProduct .main_product_slide .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    border: none;
+    cursor: center;
+
+}
+
+.MainProduct .main_product_slide .slick-dots li.slick-active button {
+background-color: #c9c9c9;
+}
+
+.MainProduct .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+/* 화살표 방향 조절 */
+
+.MainProduct .arrows i {
+    position: absolute;
+    top: 0;
+    transform: translate(0,-50%);
+
+    background: rgb(147, 147, 147);
+    color: #333;
+    padding: 10px; 
+}
+
+.MainProduct .arrows .left {
+    left: 0;
+}
+
+.MainProduct .arrows .right {
+    right: 0;
+} 
+
+.mainCustomer {
+    padding: 120px 0;
+}
+
+.mainCustomer .tab_menu {
+    display: flex;
+    gap: 4px;
+    margin: 0 0 24px 0;
+} 
+
+.mainCustomer .tab_menu li {
+    border: 1px solid #333;
+    text-align: center;
+    flex: 1;
+
+}
+
+.mainCustomer .tab_menu li.on {
+    background: #a78fb5;
+    color: #fff;
+}
+
+.mainCustomer .tab_menu li a {
+    display: block;
+    padding: 12px 0 ;
+}
+
+.mainCustomer .tab_content .content {
+    display: none;
+
+}
+
+.mainCustomer .tab_content .content.on {
+    display: block;
+    
+}
+
+.Footer {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.Footer .inner {
+    display: flex;
+}
+
+.Footer .inner .link {
+    margin: 0 0 0 auto;
+}
+
+.Footer .lnk {
+    background: #a78fb5;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+}
+
+.totop {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    background: transparent;
+    border: none;
+}
+
+.totop.on {
+    visibility: visible;
+    opacity: 1;
+}
+
+.totop i {
+    background: hsl(0, 0%, 51%);
+    color: #fff;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graff - 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+</head>
+
+<body>
+    <div class="Wrap">
+        <!-- 상위 css 네이밍 규칙은 pascal case를 쓰기로 하고 하위는 적절히 섞어서 응용하겠습니다. -->
+        <header class="Header">
+            <!-- http://gridcalculator.dk/ 그리드 계산기 -->
+            <div class="inner">
+                <h1><a href="./">
+                        <img src="./images/grafflogo.png" alt="graff">
+                    </a>
+                </h1>
+                <nav class="Gnb">
+                    <ul>
+                        <li><a href="">하이퍼쥬얼리</a></li>
+                        <li><a href="">쥬얼리 컬렉션</a></li>
+                        <li><a href="">컬렉션 &amp; 브라이덜</a></li>
+                        <li><a href="">웨딩쥬얼리</a></li>
+                        <li><a href="">특별한 솔리테어</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <i class="xi-search"></i>
+                </div>
+        </header>
+        <main class="Main">
+            <section class="MainVisual">
+                <!-- h2 스크린 리더기는 읽을 수 있고 화면에는 보이지 않게 함.(ir기법) -->
+                <h2 class="blind">main content</h2>
+                <div class="Main_Visual_Slide">
+                    <div class="itm itm01"></div>
+                    <div class="itm itm02"></div>
+                    <div class="itm itm03"></div>
+                </div>
+            </section>
+            <!-- **** 중요 **** -->
+            <section class="MainBasic">
+                <div class="title">
+                    <h2> JEWELLERY COLLECTION EVENT</h2>
+                    <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                </div>
+                <div class="inner">
+                    <figure>
+                        <div class="img_wrap">
+                            <img src="./images/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>모던하면서도 클래식한</strong>
+                        <div class="order">
+                            <a href="">구매하기</a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="img_wrap">
+                            <img src="./images/lesedilarona02.jpg" alt="">
+                        </div>
+                        <strong>디자인들을 완벽하게 표현한</strong>
+                        <div class="order">
+                            <a href="">구매하기</a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="img_wrap">
+                            <img src="./images/lesedilarona03.jpg" alt="">
+                        </div>
+                        <strong>라프 하우스의 시그니처</strong>
+                        <div class="order">
+                            <a href="">구매하기</a>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <section class="MainProduct">
+                <div class="title">
+                    <h2> JEWELLERY COLLECTION EVENT</h2>
+                    <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                </div>
+                <div class="inner">
+                    <div class="main_product_slide">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./images/lesedilarona01.jpg" alt="">
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./images/lesedilarona02.jpg" alt="">
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./images/lesedilarona03.jpg" alt="">
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./images/lesedilarona04.jpg" alt="">
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./images/lesedilarona05.jpg" alt="">
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./images/lesedilarona06.jpg" alt="">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-arrow-left left"></i>
+                        <i class="xi-arrow-right right"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="mainCustomer">
+                <div class="title">
+                    <h2> JEWELLERY COLLECTION EVENT</h2>
+                    <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                </div>
+                <div class="inner">
+                    <div class="news">
+                        <!-- 탭 메뉴 만들기 -->
+
+
+                        <ul class="tab_menu">
+                            <li class="on">
+                                <a href="">Best</a>
+                            </li>
+                            <li><a href="">Classic</a>
+                            </li>
+                            <li><a href="">Delxe</a>
+                            </li>
+                            <li><a href="">Fancy</a>
+                            </li>
+                            <li><a href="">Premiume</a>
+                            </li>
+                        </ul>
+                        <div class="tab_content">
+                            <div class="content on">Best content</div>
+                            <div class="content">Classic content</div>
+                            <div class="content">Delxe content</div>
+                            <div class="content">Fancy content</div>
+                            <div class="content">Premiume content</div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <!-- 지도 만들기 -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="Footer">
+            <h2 class="blind">고객지원</h2>
+            <div class="inner">
+                <address></address>
+                <div class="link">
+                    <select class="lnk">
+                        <option value="">family link</option>
+                        <option value="https://naver.com">naver</option>
+                        <option value="https://daum.net">daum</option>
+                        <option value="https://google.com">google</option>
+                    </select>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <button class="totop">
+        <i class="xi-arrow-top"></i>
+    </button>
+
+</body>
+
+</html>
